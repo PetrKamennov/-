@@ -1,0 +1,210 @@
+*,
+*;;before
+*;;after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  list-style: none;
+}
+input {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+body {
+  margin: 0;
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000000;
+}
+.wrapped {
+  min-height: 100%;
+}
+._container_h{
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+._container{
+  max-width: 1235px;
+}
+/*=========================================================================================*/
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    transition: all 0.5s;
+    opacity: 1;
+}
+.preloader-remove {
+    opacity: 0;
+    z-index: -10;
+}
+
+@-webkit-keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(125, 125, 125);
+  }
+}
+
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(125, 125, 125);
+  }
+}
+
+.svg-elem-1 {
+animation: 1.5s linear 0s infinite alternate animate-svg-fill-1;
+}
+
+@-webkit-keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(125, 125, 125);
+  }
+}
+
+@keyframes animate-svg-fill-2 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(125, 125, 125);
+  }
+}
+
+.svg-elem-2 {
+animation: 1.5s linear 0s infinite alternate animate-svg-fill-2;
+}
+
+@-webkit-keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(125, 125, 125);
+  }
+}
+
+@keyframes animate-svg-fill-3 {
+  0% {
+    fill: transparent;
+  }
+
+  100% {
+    fill: rgb(125, 125, 125);
+  }
+}
+
+.svg-elem-3 {
+        animation: 1.5s linear 0s infinite alternate animate-svg-fill-3;
+}
+
+.perehod{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: all 0.5s;
+  display: none;
+  z-index: -10;
+}
+.perehod__whiteLine1,
+.perehod__whiteLine2,
+.perehod__whiteLine3,
+.perehod__whiteLine4,
+.perehod__whiteLine5,
+.perehod__whiteLine6,
+.perehod__whiteLine7,
+.perehod__whiteLine8{
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  transition: 5s;
+}
+.perehod__whiteLine1:before,
+.perehod__whiteLine2:before,
+.perehod__whiteLine3:before,
+.perehod__whiteLine4:before,
+.perehod__whiteLine5:before,
+.perehod__whiteLine6:before,
+.perehod__whiteLine7:before{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-right: 1px solid black;
+}
+.perehod__blackLine1,
+.perehod__blackLine2,
+.perehod__blackLine3,
+.perehod__blackLine4,
+.perehod__blackLine5,
+.perehod__blackLine6,
+.perehod__blackLine7,
+.perehod__blackLine8{
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  transition: 5s;
+}
+/* .perehod__border{
+  width: 0px;
+  height: 0%;
+  transition: 5s;
+  background-color: black;
+} */
